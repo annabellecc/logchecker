@@ -1,0 +1,25 @@
+{
+  "name": "annabellecc/logchecker",
+  "description": "log checker",
+  "keywords": [
+    "log",
+    "checker",
+    "debug"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Annabelle Chow",
+      "email": "1293539567@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "symfony/var-dumper": "~1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Annabelle\\LogChecker": "src/"
+    }
+  }
+}

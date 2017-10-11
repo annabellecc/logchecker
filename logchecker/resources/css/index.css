@@ -1,0 +1,19 @@
+body {
+    background-color:#18171B;
+}
+.empty {
+    width:50px;height:50px;position: fixed; bottom: 50px; right: 10px; z-index: 999999999;background:white;color: inherit;font-size: 40px;text-align: center
+}
+
+.flush {
+    text-decoration:none; line-height: 45px;
+}
+.active {
+    color: red;
+}
+.toolbar {
+    position: fixed; top: 0;right:0;z-index: 99999999;background-color: #18171B;height: 100%;
+}
+.prj {
+    display:inline-block; color:white;padding:1rem;text-decoration:none
+}

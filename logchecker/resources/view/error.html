@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>日志查看</title>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style>
+        body {
+            background-color: #18171B;
+        }
+
+        .empty {
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            bottom: 50px;
+            right: 10px;
+            z-index: 999999999;
+            background: white;
+            color: inherit;
+            font-size: 40px;
+            text-align: center
+        }
+
+        .flush {
+            text-decoration: none;
+            line-height: 45px;
+        }
+
+        .toolbar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 99999999;
+            background-color: #18171B;
+            height: 100%;
+        }
+
+        .prj {
+            display: inline-block;
+            color: white;
+            padding: 1rem;
+            text-decoration: none
+        }
+
+        .active {
+            color: red;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            document.body.scrollTop = document.body.scrollHeight;
+        };
+    </script>
+</head>
+<body>
+<h3 style="color: white"><?php echo $error; ?></h3>
+<div class="empty">
+    <a class="flush" href="//<?php echo $current_url . '&empty=1' ?>"> × </a>
+</div>
+<div class="toolbar">
+    <?php foreach($log_paths as $name => $path): ?>
+    <a class="prj "
+       href="//<?php echo $base_url . '?path=' . $path; ?>"><?php echo $name; ?></a><br>
+    <?php endforeach; ?>
+</div>
+</body>
+</html>
