@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Annabelle\\LogChecker": "src/"
+      "Annabelle\\LogChecker\\": "src/"
     }
   }
 }
