@@ -15,3 +15,4 @@ return [
         'Pic'  => "Users/Anna/wwwroot/pic.52inlove.com/storage/logs/laravel-" . date('Y-m-d') . ".log",
     ],
 ];
+
