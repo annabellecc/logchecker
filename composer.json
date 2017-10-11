@@ -1,6 +1,6 @@
 {
   "name": "annabellecc/logchecker",
-  "description": "log checker",
+  "description": "laravel log checker",
   "keywords": [
     "log",
     "checker",
@@ -14,7 +14,7 @@
     }
   ],
   "require": {
-    "php": ">=5.5.9",
+    "php": ">=7.0",
     "symfony/var-dumper": "~3.2"
   },
   "autoload": {
