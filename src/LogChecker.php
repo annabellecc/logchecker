@@ -88,7 +88,7 @@ class LogChecker {
                 array_shift($ret[1]);
                 $content = $ret[1];
             } else {
-                preg_match_all('/(\[[\d-:\s]{19}\])(.*DEBUG|INFO|NOTICE|WARNING|ERROR|CRITICAL|ALERT|EMERGENCY)([^\[{]*)\s(.*)/', $header, $matches);
+                preg_match_all('/(\[[\d-:\s]{19}\])(.*(?:DEBUG|INFO|NOTICE|WARNING|ERROR|CRITICAL|ALERT|EMERGENCY))([^\[{]*)\s(.*)/', $header, $matches);
                 if (isset($matches[1][0]) && isset($matches[2][0]) && isset($matches[3][0]) && isset($matches[4][0])) {
                     $header  = $matches[1][0] . $matches[2][0] . $matches[3][0];
                     $content = json_decode($matches[4][0], true);
